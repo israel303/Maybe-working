@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: telegram-thumbnail-bot
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python bot.py"
+    envVars:
+      - key: TELEGRAM_TOKEN
+        value: 7603316275:AAESVk8kz5DmCBLyTFashE7C53H16L_Xeck
